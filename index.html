@@ -65,8 +65,8 @@
         }
 
         .card-body {
-        height: auto; /* Set a fixed height */
-        overflow: -moz-hidden-unscrollable; /* Hide overflow content */
+            height: auto; /* Set a fixed height */
+            overflow: hidden; /* Hide overflow content */
         }
 
         .card-title {
@@ -108,7 +108,7 @@
             color: #007bff;
         }
 
-         /* Skills Sub-section */
+        /* Skills Sub-section */
         .skills {
             text-align: center;
         }
@@ -162,12 +162,16 @@
             font-size: 36px;
             cursor: pointer;
         }
+
+        .card-img-top {
+            height: 200px; /* Set the height of the image */
+            object-fit: cover; /* Ensure the image covers the entire container */
+        }
     </style>
 </head>
 <body>
     <div class="blur-background"></div>
     <!-- Navbar -->
-    <div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Portfolio</a>
@@ -200,31 +204,34 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section ">
+    <section id="projects" class="section">
         <div class="container">
             <h2 class="text-left mb-4">Projects</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
+            <div id="projectCarousel" class="row project-carousel">
+                <!-- Project cards with images -->
+                <div class="col-md-4 mb-4 project-card">
                     <div class="card">
+                        <img src="images.png" class="card-img-top" alt="Project 1 Image">
                         <div class="card-body">
-                            <h5 class="card-title">Inventory Management System  (IVM)</h5>
+                            <h5 class="card-title">Inventory Management System (IVM)</h5>
                             <p class="card-text">The project aims to provide a user-friendly and secure solution for efficient inventory management. It includes setting up a MySQL database, establishing a Python-MySQL connection, implementing CRUD operations for data manipulation.</p>
                             <p class="text-right">(Currently working on it.)</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 project-card">
                     <div class="card">
+                        <img src="12.png" class="card-img-top" alt="Project 2 Image">
                         <div class="card-body">
                             <h5 class="card-title">Random Password Generator</h5>
-                            <p class="card-text">It is a simple application built using the Tkinter library in Python. Its main purpose is to generate random passwords based on user-defined criteria such as length. The generated password includes a mix of letters (both upper and lower case), digits, and punctuation characters, providing a secure and diverse. 
-                        </p>
-                        <a href="https://github.com/Sujall10/random-password-generator">Know more...</a>
+                            <p class="card-text">It is a simple application built using the Tkinter library in Python. Its main purpose is to generate random passwords based on user-defined criteria such as length. The generated password includes a mix of letters (both upper and lower case), digits, and punctuation characters, providing a secure and diverse.</p>
+                            <a href="https://github.com/Sujall10/random-password-generator">Know more...</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 project-card">
                     <div class="card">
+                        <img src="original-fbafeb9a3b3a9cc5ef4931d038b60a2b.png" class="card-img-top" alt="Project 3 Image">
                         <div class="card-body">
                             <h5 class="card-title">Money Tracking WebApp</h5>
                             <p class="card-text">This money tracking web app, built with HTML, CSS, and JavaScript, provides users with a straightforward and interactive platform for managing their finances. Developers can further improve the app by incorporating additional features and refining the user interface based on user feedback and evolving needs.</p>
@@ -232,6 +239,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Add more projects here -->
             </div>
         </div>
     </section>
@@ -293,29 +301,23 @@
 
     <!-- Contact Section -->
     <section id="contact" class="section">
-
-        <section id="contact" class="container">
+        <div class="container">
             <h2>Contact Information</h2>
             <p class="lead text-left">You can reach me via email or phone:</p>
             <ul class="list-unstyled">
-              <li><i class="fas fa-envelope mr-2"></i>Email: <a href="mailto:example@example.com">sujalrajput0710@gmail.com</a></li>
-              <li><i class="fas fa-phone mr-2"></i>Phone: +91 9328422802</li>
+                <li><i class="fas fa-envelope mr-2"></i>Email: <a href="mailto:sujalrajput0710@gmail.com">sujalrajput0710@gmail.com</a></li>
+                <li><i class="fas fa-phone mr-2"></i>Phone: +91 9328422802</li>
             </ul>
-        </section>
-          
+        </div>
     </section>
 
     <!-- Social Icons Section -->
     <section class="social-icons">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-center mb-4">Connect with Me</h2>
-                    <div class="text-center">
-                        <a href="https://www.linkedin.com/in/sujal-rajput/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/Sujall10" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
+            <h2 class="text-center mb-4">Connect with Me</h2>
+            <div class="text-center">
+                <a href="https://www.linkedin.com/in/sujal-rajput/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Sujall10" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </section>
@@ -327,25 +329,14 @@
         </div>
     </footer>
 
-</div>
-    
-
-
     <!-- Bootstrap JS CDN (Optional) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Font Awesome CDN for icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <!-- Scroll to Top Functionality -->
-    <script>
-        document.querySelector('.scroll-up').addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
-
+    <!-- Custom JavaScript -->
+    
 </body>
 </html>
-
-
 
