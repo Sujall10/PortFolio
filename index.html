@@ -328,6 +328,8 @@
             <i class="fas fa-arrow-up scroll-up"></i>
         </div>
     </footer>
+    
+   
 
     <!-- Bootstrap JS CDN (Optional) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -336,6 +338,12 @@
     <!-- Font Awesome CDN for icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- Custom JavaScript -->
+
+    <script>
+        document.querySelector('.scroll-up').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
     
 </body>
 </html>
