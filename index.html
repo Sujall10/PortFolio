@@ -16,6 +16,13 @@
             color: #fff;
             font-family: Arial, sans-serif;
         }
+
+        @media (max-width: 767px) {
+            /* Adjust the card layout for smaller screens */
+            .card {
+                width: 100%;
+            }
+
         .blur-background {
             position: fixed;
             top: 0;
@@ -55,6 +62,10 @@
             box-shadow:  5px 8px 5px  rgb(255, 255, 255);
         }
 
+        .card-body {
+        height: 400px; /* Set a fixed height */
+        overflow: -moz-hidden-unscrollable; /* Hide overflow content */
+        }
 
         .card-title {
             color: #fff;
