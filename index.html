@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujal's Portfolio</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body {
+            background-image: url('');
+            background-size: cover;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .blur-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace 'your-background-image.jpg' with your actual image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(10px); /* Adjust the blur radius as needed */
+            z-index: -1;
+        }
+
+        .section {
+            padding: 80px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+        }
+
+        .jumbotron {
+            padding: 100px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+        }
+
+        .card {
+            background-color: rgba(185, 166, 166, 0.415);
+            border: none;
+            height: auto;
+            box-shadow:  5px 8px 5px  rgb(148, 147, 147);
+            color: #fff;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow:  5px 8px 5px  rgb(255, 255, 255);
+        }
+
+
+        .card-title {
+            color: #fff;
+        }
+
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .btn-dark {
+            background-color: rgba(35, 34, 34, 0.1);
+            border-color: rgba(35, 34, 34, 0.1);
+        }
+
+        .btn-dark:hover {
+            background-color: rgba(35, 34, 34, 0.1);
+            border-color: rgba(35, 34, 34, 0.1);
+        }
+
+        /* Social Icons Section */
+        .social-icons {
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+
+         /* Skills Sub-section */
+        .skills {
+            text-align: center;
+        }
+
+        .skills h3 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .skills .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .skills .icon:hover {
+            color: blueviolet;
+            transform: scale(1.2);
+        }
+
+        .skills .icon-text {
+            color: #fff;
+        }
+
+        /* Education Sub-section */
+        .education {
+            text-align: center;
+        }
+
+        .education h3 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .education .degree {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .education .institute {
+            color: #aaa;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer .scroll-up {
+            font-size: 36px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="blur-background"></div>
+    <!-- Navbar -->
+    <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="jumbotron text-left">
+        <div class="container">
+            <h1 class="display-4">Sujal's Portfolio</h1>
+            <p class="lead">As a committed Information Technology student, I'm fueled by a passion for Data Science, Development, and a desire to explore AI further. I'm eager to carve out a career path where I can leverage my academic knowledge and refine my practical abilities. My goal is to create a positive impact, excel in dynamic settings, and actively pursue ongoing learning to fuel my professional development.</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Hire Me</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section ">
+        <div class="container">
+            <h2 class="text-left mb-4">Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Inventory Management System  (IVM)</h5>
+                            <p class="card-text">The project aims to provide a user-friendly and secure solution for efficient inventory management. It includes setting up a MySQL database, establishing a Python-MySQL connection, implementing CRUD operations for data manipulation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Random Password Generator</h5>
+                            <p class="card-text">It is a simple application built using the Tkinter library in Python. Its main purpose is to generate random passwords based on user-defined criteria such as length. The generated password includes a mix of letters (both upper and lower case), digits, and punctuation characters, providing a secure and diverse. 
+                        </p>
+                        <a href="https://github.com/Sujall10/random-password-generator">Know more...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Money Tracking WebApp</h5>
+                            <p class="card-text">This money tracking web app, built with HTML, CSS, and JavaScript, provides users with a straightforward and interactive platform for managing their finances. Developers can further improve the app by incorporating additional features and refining the user interface based on user feedback and evolving needs.</p>
+                            <a href="https://github.com/Sujall10/bharatIntern_money-tracking-Webapp">Know more...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="text-left mb-4">About Me</h2>
+            <p class="lead text-left">Write about yourself here. Mention your skills, interests, and experiences. Also, mention your curiosity about Data Science.</p>
+            <!-- Skills Sub-section -->
+            <div class="skills text-center mt-5">
+                <h3 class="mb-3">Skills</h3>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 mb-4">
+                        <i class="fab fa-python icon"></i>
+                        <p class="icon-text">Python</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <i class="fab fa-html5 icon"></i>
+                        <p class="icon-text">HTML</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <i class="fab fa-css3-alt icon"></i>
+                        <p class="icon-text">CSS</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <i class="fas fa-desktop icon"></i>
+                        <p class="icon-text">GUI</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <i class="fas fa-database icon"></i>
+                        <p class="icon-text">NumPy</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <i class="fas fa-python icon"></i>
+                        <p class="icon-text">Pandas</p>
+                    </div>
+                    <!-- Add more skills here -->
+                </div>
+                <!-- Education Sub-section -->
+                <div class="education text-center mt-5">
+                    <h3 class="mb-3">Education</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 mb-4">
+                            <h4 class="degree">Bachelor of Science in INFORMATION TECHNOLOGY</h4>
+                            <h5 class="institute">Gujarat Technological University (SVIT, Vasad)</h5>
+                        </div>
+                        <!-- Add more education details here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <form action="java.php" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control form-control-lg" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control form-control-lg" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" class="form-control form-control-lg" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Social Icons Section -->
+    <section class="social-icons">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center mb-4">Connect with Me</h2>
+                    <div class="text-center">
+                        <a href="https://www.linkedin.com/in/sujal-rajput/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Sujall10" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Sujal's Portfolio. All rights reserved.</p>
+            <i class="fas fa-arrow-up scroll-up"></i>
+        </div>
+    </footer>
+
+</div>
+    
+
+
+    <!-- Bootstrap JS CDN (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome CDN for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Scroll to Top Functionality -->
+    <script>
+        document.querySelector('.scroll-up').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>
+
+
+
