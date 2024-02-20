@@ -51,27 +51,37 @@
             color: #fff;
         }
 
+        
+
+        .project-card {
+            transition: transform 0.3s ease-in-out; /* Add card hover animation */
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px); /* Adjust hover animation */
+        }
+
         .card {
-            background-color: rgba(185, 166, 166, 0.415);
-            border: none;
-            height: auto;
-            box-shadow:  5px 8px 5px  rgb(148, 147, 147);
-            color: #fff;
+            background-color: rgba(255, 255, 255, 0.9); /* Adjust card background color */
         }
 
         .card:hover {
-            transform: scale(1.05);
-            box-shadow:  5px 8px 5px  rgb(255, 255, 255);
-        }
-
-        .card-body {
-            height: auto; /* Set a fixed height */
-            overflow: hidden; /* Hide overflow content */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
         }
 
         .card-title {
-            color: #fff;
+            color: #000; /* Adjust card title color */
         }
+
+        .card-text {
+            color: #555; /* Adjust card text color */
+        }
+
+        .card-body {
+            padding: 20px; /* Adjust card body padding */
+        }
+
+
 
         .nav-link {
             color: #fff !important;
@@ -244,40 +254,43 @@
         </div>
     </section>
 
+
+
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
             <h2 class="text-left mb-4">About Me</h2>
             <p class="lead text-left">Hi there! I'm Sujal, a passionate developer and aspiring data scientist with a keen interest in AI.My skills include HTML, CSS, and Python, and I'm constantly honing my abilities in data science and data analysis.Currently diving deep into the world of data, I'm excited about exploring insights and patterns that drive decision-making.Looking forward to delving deeper into AI and its applications in shaping the future. Let's connect and collaborate on innovative projects!</p>
-            <!-- Skills Sub-section -->
-            <div class="skills text-left mt-5">
-                <h3 class="mb-3">Skills</h3>
-                <div class="row justify-content-center text-center">
-                    <div class="col-md-4 mb-4">
-                        <i class="fab fa-python icon"></i>
-                        <p class="icon-text">Python</p>
+                <!-- Skills Sub-section -->
+                <div id="skills" class="skills text-left mt-5">
+                    <h3 class="mb-3">Skills</h3>
+                    <div class="row justify-content-center text-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <i class="fab fa-python icon"></i>
+                            <p class="icon-text">Python</p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <i class="fab fa-html5 icon"></i>
+                            <p class="icon-text">HTML</p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <i class="fab fa-css3-alt icon"></i>
+                            <p class="icon-text">CSS</p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <i class="fas fa-desktop icon"></i>
+                            <p class="icon-text">GUI</p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <i class="fas fa-database icon"></i>
+                            <p class="icon-text">NumPy</p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <i class="fas fa-python icon"></i>
+                            <p class="icon-text">Pandas</p>
+                        </div>
+                        <!-- Add more skills here -->
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <i class="fab fa-html5 icon"></i>
-                        <p class="icon-text">HTML</p>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <i class="fab fa-css3-alt icon"></i>
-                        <p class="icon-text">CSS</p>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <i class="fas fa-desktop icon"></i>
-                        <p class="icon-text">GUI</p>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <i class="fas fa-database icon"></i>
-                        <p class="icon-text">NumPy</p>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <i class="fas fa-python icon"></i>
-                        <p class="icon-text">Pandas</p>
-                    </div>
-                    <!-- Add more skills here -->
                 </div>
                 <!-- Education Sub-section -->
                 <div class="education text-left mt-5">
